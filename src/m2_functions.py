@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Geoffrey Cohen.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -37,6 +37,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
 
     window.close_on_mouse_click()
 
@@ -50,6 +51,7 @@ def turtle1():
 
     ada.pen = rg.Pen('aquamarine', 30)
     ada.paint_bucket = rg.PaintBucket('yellow')
+    ada.speed = 100
 
     ada.begin_fill()
     ada.draw_circle(150)
@@ -66,6 +68,7 @@ def turtle2():
 
     grace.pen = rg.Pen('blue', 15)
     grace.paint_bucket = rg.PaintBucket('magenta')
+    grace.speed = 100
 
     # Keep track of where I am, to go back to it at the end.
     # Then choose a RANDOM starting point for the motion in here.
@@ -95,7 +98,7 @@ def turtle3():
     """
     maja = rg.SimpleTurtle()
     maja.pen = rg.Pen('black', 10)
-
+    maja.speed = 100
     maja.forward(300)
 
     maja.begin_fill()
@@ -103,9 +106,17 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    geoff = rg.SimpleTurtle()
+    geoff.pen = rg.Pen('blue',13)
+
+    geoff.forward(200)
+    geoff.draw_circle(50)
+
+
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
