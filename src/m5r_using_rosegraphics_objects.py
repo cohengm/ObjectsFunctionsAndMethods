@@ -135,6 +135,7 @@ def example3():
     circle.fill_color = 'green'
     circle.attach_to(window)
 
+    circle.
 
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
