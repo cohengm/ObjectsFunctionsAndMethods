@@ -70,11 +70,12 @@ def main():
     and waits for the user to click anywhere in the window to close it.
     """
     window = rg.TurtleWindow()
+    window.delay(0.1)
 
     # Make the animation go much faster.
     #   First number:  bigger means faster.
     #   Second number: bigger means slower.
-    window.tracer(1, 1)
+    #window.tracer(100, 1)
 
     jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
@@ -213,6 +214,39 @@ def try_functions():
 
 
 def try_methods_and_functions():
+    alec = rg.SimpleTurtle()
+    alec.pen = rg.Pen('blue', 5)
+
+    alec.backward(150)
+
+    alec.speed = 1
+
+    alec.draw_square(100)
+    alec.right(30)
+    alec.draw_square(100)
+
+    alec.speed = 1
+    alec.pen = rg.Pen('red', 5)
+
+    for k in range(10):
+        alec.draw_square(50)
+        alec.right(15)
+
+    alec.speed = 100
+
+    alec.pen = rg.Pen('red', 35)
+
+    for k in range(8):
+        alec.draw_square(300)
+        alec.right(60)
+
+    alec.pen = rg.Pen('black', 3)
+
+    alec.backward(200)
+
+    alec.draw_circle(200)
+
+    alec.draw_square(50)
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
@@ -245,7 +279,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
